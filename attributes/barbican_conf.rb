@@ -123,15 +123,13 @@ default['openstack']['key-manager']['conf'].tap do |conf|
   conf['secretstore']['enable_multiple_secret_stores'] = 'false'
 
   if node['openstack']['key-manager']['ssl']['enabled']
-    conf['ssl']['ca_file'] = node['openstack']['key-manager']['ssl']['chainfile']
-    conf['ssl']['cert_file'] = node['openstack']['key-manager']['ssl']['certfile']
-    conf['ssl']['key_file'] = node['openstack']['key-manager']['ssl']['keyfile']
-    conf['ssl']['version'] = ''
-    conf['ssl']['ciphers'] = node['openstack']['key-manager']['ssl']['ciphers']
-
-    # these are aparently ununsed
-    # default['openstack']['key-manager']['ssl']['ca_certs_path'] = ''
-    # default['openstack']['key-manager']['ssl']['cert_required'] = ''
-    # default['openstack']['key-manager']['ssl']['protocol'] = ''
+    conf['ssl']['ca_file']   =  node['openstack']['key-manager']['ssl']['ca_certs_path'] + '/' +
+                                node['openstack']['key-manager']['ssl']['chainfile']
+    conf['ssl']['cert_file'] =  node['openstack']['key-manager']['ssl']['ca_certs_path'] + '/' +
+                                node['openstack']['key-manager']['ssl']['certfile']
+    conf['ssl']['key_file']  =  node['openstack']['key-manager']['ssl']['ca_certs_path'] + '/' +
+                                node['openstack']['key-manager']['ssl']['keyfile']
+    conf['ssl']['version']   =  node['openstack']['key-manager']['ssl']['protocol']
+    conf['ssl']['ciphers']   =  node['openstack']['key-manager']['ssl']['ciphers']
   end
 end

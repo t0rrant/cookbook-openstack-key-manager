@@ -1,7 +1,7 @@
 name 'openstack-key-manager'
 maintainer 'Manuel Torrinha'
 maintainer_email 'manuel.torrinha@tecnico.ulisboa.pt'
-license 'MIT'
+license 'Apache-2.0'
 description 'Installs/Configures OpenStack Key Manager service Barbican'
 version '17.0.0'
 chef_version '>= 12.5'
