@@ -37,7 +37,6 @@ node.default['openstack']['key-manager']['conf_secrets']
 .[]('DEFAULT')['sql_connection'] =
   db_uri('key-manager', db_user, db_pass)
 
-
 if node['openstack']['mq']['service_type'] == 'rabbit'
   node.default['openstack']['key-manager']['conf_secrets']['DEFAULT']['transport_url'] = rabbit_transport_url 'key-manager'
 end

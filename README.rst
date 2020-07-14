@@ -45,6 +45,11 @@ openstack-key-manager::api
 
 - Installs and configures barbican-api service
 
+openstack-key-manager::client
+-----------------------------
+
+- Installs barbican CLI
+
 openstack-key-manager::identity_registration
 --------------------------------------------
 

@@ -41,6 +41,7 @@ when 'fedora', 'rhel' # :pragma-foodcritic: ~FC024 - won't fix this
       'memcache_python_packages' => ['python-memcache'],
       'barbican_api_packages' => %w(openstack-barbican-api),
       'barbican_api_service' => 'openstack-barbican-api',
+      'barbican_client_packages' => %w(python-barbicanclient),
       'package_overrides' => '',
   }
 end
