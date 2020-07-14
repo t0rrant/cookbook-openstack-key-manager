@@ -9,22 +9,22 @@ Chef cookbook that installs Openstack's Key Manager service Barbican
 Requirements
 ============
 
- - Chef 15 or higher
- - Chef Workstation 0.18.3 for testing (also includes berkshelf for
+- Chef 15 or higher
+- Chef Workstation 0.18.3 for testing (also includes berkshelf for
    cookbook dependency resolution)
 
 Platform
 ========
 
- - centos
+- centos
 
 Cookbooks
 =========
 
 The following cookbooks are dependencies:
 
- - 'apache2', '< 6.0'
- - 'openstack-common', '~> 17.0'
+- 'apache2', '< 6.0'
+- 'openstack-common', '~> 17.0'
 
 Attributes
 ==========
@@ -43,12 +43,12 @@ Recipes
 openstack-key-manager::api
 --------------------------
 
- - Installs and configures barbican-api service
+- Installs and configures barbican-api service
 
 openstack-key-manager::identity_registration
 --------------------------------------------
 
- - Registers the barbican endpoints with keystone
+- Registers the barbican endpoints with keystone
 
 Data Bags
 =========
