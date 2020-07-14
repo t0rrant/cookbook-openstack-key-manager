@@ -65,14 +65,14 @@ repository.
 TODO
 ====
 
- - [ ] Pending changes on upstream cookbooks, see Berksfile for more info
- - [ ] Add support for debian/ubuntu
- - [x] Complete README.md with useful info, see other upstream cookbooks for example
- - [ ] Add support for openstack-chef testing
- - [ ] Review attributes
- - [ ] Add spec tests
- - [ ] Add memcached
- - [ ] Add to openstack governance
+- [ ] Pending changes on upstream cookbooks, see Berksfile for more info
+- [ ] Add support for debian/ubuntu
+- [x] Complete README.md with useful info, see other upstream cookbooks for example
+- [ ] Add support for openstack-chef testing
+- [ ] Review attributes
+- [ ] Add spec tests
+- [ ] Add memcached
+- [ ] Add to openstack governance
 
 License and Author
 ==================
